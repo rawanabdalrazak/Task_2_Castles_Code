@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --height:450px;
+    --width:450px;
+}
+body{
+   background-color: #f78ca0;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: sans-serif;
+}
+.container{
+    min-height: var(--height);
+    width: var(--width);
+    position: relative;
+}
+section{
+    min-height: var(--height);
+    width: var(--width);
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2rem);
+    padding: 3rem;
+}
+.circle1,
+.circle2{
+    background: rgba(255, 255, 255, 0.4);
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    border-radius: 50%;
+}
+.circle1{
+    top: -70px;
+    right: -70px;
+}
+.circle2{
+    bottom: -70px;
+    left: -70px;
+}
+.title{
+    width: 100%;
+   
+}
+.title h1{
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.5rem;
+    opacity: 0.9;
+    margin-bottom: 20px;
+    position: relative;
+   
+}
+.title h1::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100px;
+    height: 4px;
+    background-color: #fff;
+ 
+
+}
+.form{
+    margin-top: 5rem; 
+}
+.form .input-box{
+    width: 100%;
+    margin-top: 30px;
+}
+.form .input-box input{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    outline: none;
+   
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    
+}
+.form .input-box .Change-color{
+    border-radius: 5rem;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.5rem;
+
+  
+    
+}
+
